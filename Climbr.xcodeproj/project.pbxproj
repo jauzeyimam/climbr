@@ -19,7 +19,6 @@
 		F8F5F790178324810079395E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F765178324810079395E /* Default-568h@2x.png */; };
 		F8F5F791178324810079395E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F766178324810079395E /* Default.png */; };
 		F8F5F792178324810079395E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F767178324810079395E /* Default@2x.png */; };
-		F8F5F793178324810079395E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F768178324810079395E /* InfoPlist.strings */; };
 		F8F5F795178324810079395E /* JIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F76D178324810079395E /* JIAnnotation.m */; };
 		F8F5F796178324810079395E /* JIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F76F178324810079395E /* JIAppDelegate.m */; };
 		F8F5F797178324810079395E /* JIClimbing Sections.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F771178324810079395E /* JIClimbing Sections.m */; };
@@ -58,7 +57,6 @@
 		F8F5F765178324810079395E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F8F5F766178324810079395E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F8F5F767178324810079395E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		F8F5F769178324810079395E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8F5F76C178324810079395E /* JIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIAnnotation.h; sourceTree = "<group>"; };
 		F8F5F76D178324810079395E /* JIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIAnnotation.m; sourceTree = "<group>"; };
 		F8F5F76E178324810079395E /* JIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIAppDelegate.h; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				F8F5F765178324810079395E /* Default-568h@2x.png */,
 				F8F5F766178324810079395E /* Default.png */,
 				F8F5F767178324810079395E /* Default@2x.png */,
-				F8F5F768178324810079395E /* InfoPlist.strings */,
 				F8F5F785178324810079395E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -249,7 +246,6 @@
 				F8F5F790178324810079395E /* Default-568h@2x.png in Resources */,
 				F8F5F791178324810079395E /* Default.png in Resources */,
 				F8F5F792178324810079395E /* Default@2x.png in Resources */,
-				F8F5F793178324810079395E /* InfoPlist.strings in Resources */,
 				F8F5F798178324810079395E /* JIClimbing Sections.xib in Resources */,
 				F8F5F79A178324810079395E /* JIClimbingSectionCell.xib in Resources */,
 				F8F5F79C178324810079395E /* JIMapView.xib in Resources */,
@@ -313,17 +309,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F8F5F768178324810079395E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F8F5F769178324810079395E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F81C3A3E1768C113002BA31D /* Debug */ = {

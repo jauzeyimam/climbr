@@ -8,7 +8,6 @@
 
 #import "JIAppDelegate.h"
 
-#import "ViewController.h"
 #import "JIMapView.h"
 
 @implementation JIAppDelegate
