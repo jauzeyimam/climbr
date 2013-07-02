@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A8D9B8692A74446849E7B6E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E65508E27AC45409D144D38 /* libPods.a */; };
+		F81C3A211768C112002BA31D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81C3A201768C112002BA31D /* UIKit.framework */; };
+		F81C3A231768C112002BA31D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81C3A221768C112002BA31D /* Foundation.framework */; };
+		F81C3A251768C112002BA31D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81C3A241768C112002BA31D /* CoreGraphics.framework */; };
+		F81C3A441768D5C1002BA31D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F81C3A431768D5C1002BA31D /* CoreLocation.framework */; };
+		F88993401774FDF10088F23B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F889933F1774FDF10088F23B /* libicucore.dylib */; };
+		F88993421774FDF90088F23B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88993411774FDF90088F23B /* CFNetwork.framework */; };
+		F88993441774FE010088F23B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88993431774FE010088F23B /* Security.framework */; };
+		F88993A1177948160088F23B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88993A0177948160088F23B /* MapKit.framework */; };
+		F8F5F790178324810079395E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F765178324810079395E /* Default-568h@2x.png */; };
+		F8F5F791178324810079395E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F766178324810079395E /* Default.png */; };
+		F8F5F792178324810079395E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F767178324810079395E /* Default@2x.png */; };
+		F8F5F793178324810079395E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F768178324810079395E /* InfoPlist.strings */; };
+		F8F5F795178324810079395E /* JIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F76D178324810079395E /* JIAnnotation.m */; };
+		F8F5F796178324810079395E /* JIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F76F178324810079395E /* JIAppDelegate.m */; };
+		F8F5F797178324810079395E /* JIClimbing Sections.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F771178324810079395E /* JIClimbing Sections.m */; };
+		F8F5F798178324810079395E /* JIClimbing Sections.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F772178324810079395E /* JIClimbing Sections.xib */; };
+		F8F5F799178324810079395E /* JIClimbingSectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F774178324810079395E /* JIClimbingSectionCell.m */; };
+		F8F5F79A178324810079395E /* JIClimbingSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F775178324810079395E /* JIClimbingSectionCell.xib */; };
+		F8F5F79B178324810079395E /* JIMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F777178324810079395E /* JIMapView.m */; };
+		F8F5F79C178324810079395E /* JIMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F778178324810079395E /* JIMapView.xib */; };
+		F8F5F79D178324810079395E /* JIRouteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F77A178324810079395E /* JIRouteCell.m */; };
+		F8F5F79E178324810079395E /* JIRouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F77B178324810079395E /* JIRouteCell.xib */; };
+		F8F5F79F178324810079395E /* JIRoutes.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F77D178324810079395E /* JIRoutes.m */; };
+		F8F5F7A0178324810079395E /* JIRoutes.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F77E178324810079395E /* JIRoutes.xib */; };
+		F8F5F7A1178324810079395E /* JIRouteSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F780178324810079395E /* JIRouteSpecs.m */; };
+		F8F5F7A2178324810079395E /* JIRouteSpecs.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F781178324810079395E /* JIRouteSpecs.xib */; };
+		F8F5F7A3178324810079395E /* JIRouteSpecsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F783178324810079395E /* JIRouteSpecsCell.m */; };
+		F8F5F7A4178324810079395E /* JIRouteSpecsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F784178324810079395E /* JIRouteSpecsCell.xib */; };
+		F8F5F7A5178324810079395E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F785178324810079395E /* main.m */; };
+		F8F5F7A6178324810079395E /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F787178324810079395E /* MKMapView+ZoomLevel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D54AC173BAA4ECF9902C9A8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6E65508E27AC45409D144D38 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81C3A1D1768C112002BA31D /* Climbr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climbr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81C3A201768C112002BA31D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F81C3A221768C112002BA31D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F81C3A241768C112002BA31D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F81C3A431768D5C1002BA31D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F889933F1774FDF10088F23B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F88993411774FDF90088F23B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F88993431774FE010088F23B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F88993A0177948160088F23B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F88993BA177E98C20088F23B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F8F5F763178324810079395E /* Climbr-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Climbr-Info.plist"; sourceTree = "<group>"; };
+		F8F5F764178324810079395E /* Climbr-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Climbr-Prefix.pch"; sourceTree = "<group>"; };
+		F8F5F765178324810079395E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F8F5F766178324810079395E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F8F5F767178324810079395E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F8F5F769178324810079395E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8F5F76C178324810079395E /* JIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIAnnotation.h; sourceTree = "<group>"; };
+		F8F5F76D178324810079395E /* JIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIAnnotation.m; sourceTree = "<group>"; };
+		F8F5F76E178324810079395E /* JIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIAppDelegate.h; sourceTree = "<group>"; };
+		F8F5F76F178324810079395E /* JIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIAppDelegate.m; sourceTree = "<group>"; };
+		F8F5F770178324810079395E /* JIClimbing Sections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JIClimbing Sections.h"; sourceTree = "<group>"; };
+		F8F5F771178324810079395E /* JIClimbing Sections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JIClimbing Sections.m"; sourceTree = "<group>"; };
+		F8F5F772178324810079395E /* JIClimbing Sections.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "JIClimbing Sections.xib"; sourceTree = "<group>"; };
+		F8F5F773178324810079395E /* JIClimbingSectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIClimbingSectionCell.h; sourceTree = "<group>"; };
+		F8F5F774178324810079395E /* JIClimbingSectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIClimbingSectionCell.m; sourceTree = "<group>"; };
+		F8F5F775178324810079395E /* JIClimbingSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JIClimbingSectionCell.xib; sourceTree = "<group>"; };
+		F8F5F776178324810079395E /* JIMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIMapView.h; sourceTree = "<group>"; };
+		F8F5F777178324810079395E /* JIMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIMapView.m; sourceTree = "<group>"; };
+		F8F5F778178324810079395E /* JIMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JIMapView.xib; sourceTree = "<group>"; };
+		F8F5F779178324810079395E /* JIRouteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIRouteCell.h; sourceTree = "<group>"; };
+		F8F5F77A178324810079395E /* JIRouteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIRouteCell.m; sourceTree = "<group>"; };
+		F8F5F77B178324810079395E /* JIRouteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JIRouteCell.xib; sourceTree = "<group>"; };
+		F8F5F77C178324810079395E /* JIRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIRoutes.h; sourceTree = "<group>"; };
+		F8F5F77D178324810079395E /* JIRoutes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIRoutes.m; sourceTree = "<group>"; };
+		F8F5F77E178324810079395E /* JIRoutes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JIRoutes.xib; sourceTree = "<group>"; };
+		F8F5F77F178324810079395E /* JIRouteSpecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIRouteSpecs.h; sourceTree = "<group>"; };
+		F8F5F780178324810079395E /* JIRouteSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIRouteSpecs.m; sourceTree = "<group>"; };
+		F8F5F781178324810079395E /* JIRouteSpecs.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JIRouteSpecs.xib; sourceTree = "<group>"; };
+		F8F5F782178324810079395E /* JIRouteSpecsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIRouteSpecsCell.h; sourceTree = "<group>"; };
+		F8F5F783178324810079395E /* JIRouteSpecsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIRouteSpecsCell.m; sourceTree = "<group>"; };
+		F8F5F784178324810079395E /* JIRouteSpecsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JIRouteSpecsCell.xib; sourceTree = "<group>"; };
+		F8F5F785178324810079395E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8F5F786178324810079395E /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
+		F8F5F787178324810079395E /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F81C3A1A1768C112002BA31D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88993A1177948160088F23B /* MapKit.framework in Frameworks */,
+				F81C3A231768C112002BA31D /* Foundation.framework in Frameworks */,
+				F88993441774FE010088F23B /* Security.framework in Frameworks */,
+				F88993421774FDF90088F23B /* CFNetwork.framework in Frameworks */,
+				F88993401774FDF10088F23B /* libicucore.dylib in Frameworks */,
+				F81C3A441768D5C1002BA31D /* CoreLocation.framework in Frameworks */,
+				F81C3A211768C112002BA31D /* UIKit.framework in Frameworks */,
+				F81C3A251768C112002BA31D /* CoreGraphics.framework in Frameworks */,
+				1A8D9B8692A74446849E7B6E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F81C3A141768C112002BA31D = {
+			isa = PBXGroup;
+			children = (
+				F8F5F75F178324810079395E /* Climbr */,
+				F88993A0177948160088F23B /* MapKit.framework */,
+				F88993BA177E98C20088F23B /* QuartzCore.framework */,
+				F88993431774FE010088F23B /* Security.framework */,
+				F88993411774FDF90088F23B /* CFNetwork.framework */,
+				F889933F1774FDF10088F23B /* libicucore.dylib */,
+				F81C3A431768D5C1002BA31D /* CoreLocation.framework */,
+				F81C3A1F1768C112002BA31D /* Frameworks */,
+				F81C3A1E1768C112002BA31D /* Products */,
+				3D54AC173BAA4ECF9902C9A8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F81C3A1E1768C112002BA31D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F81C3A1D1768C112002BA31D /* Climbr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F81C3A1F1768C112002BA31D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F81C3A201768C112002BA31D /* UIKit.framework */,
+				F81C3A221768C112002BA31D /* Foundation.framework */,
+				F81C3A241768C112002BA31D /* CoreGraphics.framework */,
+				6E65508E27AC45409D144D38 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8F5F75F178324810079395E /* Climbr */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5F7AA178324CF0079395E /* Supporting Files */,
+				F8F5F76C178324810079395E /* JIAnnotation.h */,
+				F8F5F76D178324810079395E /* JIAnnotation.m */,
+				F8F5F76E178324810079395E /* JIAppDelegate.h */,
+				F8F5F76F178324810079395E /* JIAppDelegate.m */,
+				F8F5F770178324810079395E /* JIClimbing Sections.h */,
+				F8F5F771178324810079395E /* JIClimbing Sections.m */,
+				F8F5F772178324810079395E /* JIClimbing Sections.xib */,
+				F8F5F773178324810079395E /* JIClimbingSectionCell.h */,
+				F8F5F774178324810079395E /* JIClimbingSectionCell.m */,
+				F8F5F775178324810079395E /* JIClimbingSectionCell.xib */,
+				F8F5F776178324810079395E /* JIMapView.h */,
+				F8F5F777178324810079395E /* JIMapView.m */,
+				F8F5F778178324810079395E /* JIMapView.xib */,
+				F8F5F779178324810079395E /* JIRouteCell.h */,
+				F8F5F77A178324810079395E /* JIRouteCell.m */,
+				F8F5F77B178324810079395E /* JIRouteCell.xib */,
+				F8F5F77C178324810079395E /* JIRoutes.h */,
+				F8F5F77D178324810079395E /* JIRoutes.m */,
+				F8F5F77E178324810079395E /* JIRoutes.xib */,
+				F8F5F77F178324810079395E /* JIRouteSpecs.h */,
+				F8F5F780178324810079395E /* JIRouteSpecs.m */,
+				F8F5F781178324810079395E /* JIRouteSpecs.xib */,
+				F8F5F782178324810079395E /* JIRouteSpecsCell.h */,
+				F8F5F783178324810079395E /* JIRouteSpecsCell.m */,
+				F8F5F784178324810079395E /* JIRouteSpecsCell.xib */,
+				F8F5F786178324810079395E /* MKMapView+ZoomLevel.h */,
+				F8F5F787178324810079395E /* MKMapView+ZoomLevel.m */,
+			);
+			path = Climbr;
+			sourceTree = "<group>";
+		};
+		F8F5F7AA178324CF0079395E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8F5F763178324810079395E /* Climbr-Info.plist */,
+				F8F5F764178324810079395E /* Climbr-Prefix.pch */,
+				F8F5F765178324810079395E /* Default-568h@2x.png */,
+				F8F5F766178324810079395E /* Default.png */,
+				F8F5F767178324810079395E /* Default@2x.png */,
+				F8F5F768178324810079395E /* InfoPlist.strings */,
+				F8F5F785178324810079395E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F81C3A1C1768C112002BA31D /* Climbr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F81C3A401768C113002BA31D /* Build configuration list for PBXNativeTarget "Climbr" */;
+			buildPhases = (
+				984D040F1ED14391BA1C67C4 /* Check Pods Manifest.lock */,
+				F81C3A191768C112002BA31D /* Sources */,
+				F81C3A1A1768C112002BA31D /* Frameworks */,
+				F81C3A1B1768C112002BA31D /* Resources */,
+				A573E4E129FE4CCEB8C4F724 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Climbr;
+			productName = TheCrag;
+			productReference = F81C3A1D1768C112002BA31D /* Climbr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F81C3A151768C112002BA31D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Imam, Jauzey";
+			};
+			buildConfigurationList = F81C3A181768C112002BA31D /* Build configuration list for PBXProject "Climbr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F81C3A141768C112002BA31D;
+			productRefGroup = F81C3A1E1768C112002BA31D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F81C3A1C1768C112002BA31D /* Climbr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F81C3A1B1768C112002BA31D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F5F790178324810079395E /* Default-568h@2x.png in Resources */,
+				F8F5F791178324810079395E /* Default.png in Resources */,
+				F8F5F792178324810079395E /* Default@2x.png in Resources */,
+				F8F5F793178324810079395E /* InfoPlist.strings in Resources */,
+				F8F5F798178324810079395E /* JIClimbing Sections.xib in Resources */,
+				F8F5F79A178324810079395E /* JIClimbingSectionCell.xib in Resources */,
+				F8F5F79C178324810079395E /* JIMapView.xib in Resources */,
+				F8F5F79E178324810079395E /* JIRouteCell.xib in Resources */,
+				F8F5F7A0178324810079395E /* JIRoutes.xib in Resources */,
+				F8F5F7A2178324810079395E /* JIRouteSpecs.xib in Resources */,
+				F8F5F7A4178324810079395E /* JIRouteSpecsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		984D040F1ED14391BA1C67C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		A573E4E129FE4CCEB8C4F724 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F81C3A191768C112002BA31D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8F5F795178324810079395E /* JIAnnotation.m in Sources */,
+				F8F5F796178324810079395E /* JIAppDelegate.m in Sources */,
+				F8F5F797178324810079395E /* JIClimbing Sections.m in Sources */,
+				F8F5F799178324810079395E /* JIClimbingSectionCell.m in Sources */,
+				F8F5F79B178324810079395E /* JIMapView.m in Sources */,
+				F8F5F79D178324810079395E /* JIRouteCell.m in Sources */,
+				F8F5F79F178324810079395E /* JIRoutes.m in Sources */,
+				F8F5F7A1178324810079395E /* JIRouteSpecs.m in Sources */,
+				F8F5F7A3178324810079395E /* JIRouteSpecsCell.m in Sources */,
+				F8F5F7A5178324810079395E /* main.m in Sources */,
+				F8F5F7A6178324810079395E /* MKMapView+ZoomLevel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8F5F768178324810079395E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F5F769178324810079395E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F81C3A3E1768C113002BA31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F81C3A3F1768C113002BA31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F81C3A411768C113002BA31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D54AC173BAA4ECF9902C9A8 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Climbr/Climbr-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Climbr/Climbr-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ObjC",
+					"-licucore",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					Firebase,
+					"-framework",
+					Security,
+					"-ObjC",
+				);
+				PRODUCT_NAME = Climbr;
+				USER_HEADER_SEARCH_PATHS = AQGridView;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F81C3A421768C113002BA31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D54AC173BAA4ECF9902C9A8 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Climbr/Climbr-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Climbr/Climbr-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ObjC",
+					"-licucore",
+					"-framework",
+					CFNetwork,
+					"-framework",
+					Firebase,
+					"-framework",
+					Security,
+					"-ObjC",
+				);
+				PRODUCT_NAME = Climbr;
+				USER_HEADER_SEARCH_PATHS = AQGridView;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F81C3A181768C112002BA31D /* Build configuration list for PBXProject "Climbr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81C3A3E1768C113002BA31D /* Debug */,
+				F81C3A3F1768C113002BA31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F81C3A401768C113002BA31D /* Build configuration list for PBXNativeTarget "Climbr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F81C3A411768C113002BA31D /* Debug */,
+				F81C3A421768C113002BA31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F81C3A151768C112002BA31D /* Project object */;
+}
