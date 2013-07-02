@@ -110,13 +110,13 @@
 		F81C3A141768C112002BA31D = {
 			isa = PBXGroup;
 			children = (
-				F8F5F75F178324810079395E /* Climbr */,
 				F88993A0177948160088F23B /* MapKit.framework */,
 				F88993BA177E98C20088F23B /* QuartzCore.framework */,
 				F88993431774FE010088F23B /* Security.framework */,
 				F88993411774FDF90088F23B /* CFNetwork.framework */,
 				F889933F1774FDF10088F23B /* libicucore.dylib */,
 				F81C3A431768D5C1002BA31D /* CoreLocation.framework */,
+				F8F5F75F178324810079395E /* Climbr */,
 				F81C3A1F1768C112002BA31D /* Frameworks */,
 				F81C3A1E1768C112002BA31D /* Products */,
 				3D54AC173BAA4ECF9902C9A8 /* Pods.xcconfig */,
@@ -145,7 +145,6 @@
 		F8F5F75F178324810079395E /* Climbr */ = {
 			isa = PBXGroup;
 			children = (
-				F8F5F7AA178324CF0079395E /* Supporting Files */,
 				F8F5F76C178324810079395E /* JIAnnotation.h */,
 				F8F5F76D178324810079395E /* JIAnnotation.m */,
 				F8F5F76E178324810079395E /* JIAppDelegate.h */,
@@ -173,6 +172,7 @@
 				F8F5F784178324810079395E /* JIRouteSpecsCell.xib */,
 				F8F5F786178324810079395E /* MKMapView+ZoomLevel.h */,
 				F8F5F787178324810079395E /* MKMapView+ZoomLevel.m */,
+				F8F5F7AA178324CF0079395E /* Supporting Files */,
 			);
 			path = Climbr;
 			sourceTree = "<group>";

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  TheCrag
+//  Climbr
 //
 //  Created by Imam, Jauzey on 6/12/13.
 //  Copyright (c) 2013 Imam, Jauzey. All rights reserved.
