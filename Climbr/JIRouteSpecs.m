@@ -8,12 +8,16 @@
 
 #import "JIRouteSpecs.h"
 #import "JIRouteSpecsCell.h"
+#import "JIPicTopoViewCtrl.h"
 
 @interface JIRouteSpecs ()
 
 @end
 
 @implementation JIRouteSpecs
+{
+    NSMutableArray *imageArray;
+}
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,6 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    imageArray = [[NSMutableArray alloc] init];
+    
     self.name.text = self.nameText;
     self.grade.text = self.gradeText;
     self.type.text = self.typeText;
@@ -39,6 +45,7 @@
     
     [self.location setUserInteractionEnabled:NO];
     [self.description setUserInteractionEnabled:NO];
+
     
     
     
@@ -82,7 +89,10 @@
     [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell"
                                               forIndexPath:indexPath];
     UIImage *img = [UIImage imageNamed:@"AngelOfPoets.png"];
-    [Cell setItemDetail:img];
+    
+    [imageArray addObject:img];
+    
+    [Cell setItemDetail:[imageArray objectAtIndex:indexPath.row]];
     
     return Cell;
 
@@ -90,7 +100,11 @@
 
 -(void) collectionView:(UICollectionView*) collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    JIPicTopoViewCtrl *uiView = [[JIPicTopoViewCtrl alloc] initWithNibName:@"JIPicTopoViewCtrl" bundle:nil];
     
+    uiView.img = [imageArray objectAtIndex:indexPath.row];
+    
+    [self.navigationController pushViewController:uiView animated:YES];
 }
 
 

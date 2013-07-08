@@ -10,7 +10,6 @@
 
 @interface JIRouteSpecsCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *cellImg;
-@property (weak, nonatomic) UIImage *img;
 
 - (void) setItemDetail: (UIImage*) img;
 

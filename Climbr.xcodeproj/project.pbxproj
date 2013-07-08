@@ -37,6 +37,10 @@
 		F8F5F7A4178324810079395E /* JIRouteSpecsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F784178324810079395E /* JIRouteSpecsCell.xib */; };
 		F8F5F7A5178324810079395E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F785178324810079395E /* main.m */; };
 		F8F5F7A6178324810079395E /* MKMapView+ZoomLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F787178324810079395E /* MKMapView+ZoomLevel.m */; };
+		F8F5F7BE178334820079395E /* JIPicTopoViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F7BC178334810079395E /* JIPicTopoViewCtrl.m */; };
+		F8F5F7BF178334820079395E /* JIPicTopoViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F7BD178334820079395E /* JIPicTopoViewCtrl.xib */; };
+		F8F5F7C217836A270079395E /* JITopoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F5F7C117836A270079395E /* JITopoView.m */; };
+		F8F5F7C41784BEA80079395E /* AngelOfPoets.png in Resources */ = {isa = PBXBuildFile; fileRef = F8F5F7C31784BEA70079395E /* AngelOfPoets.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +89,12 @@
 		F8F5F785178324810079395E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8F5F786178324810079395E /* MKMapView+ZoomLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZoomLevel.h"; sourceTree = "<group>"; };
 		F8F5F787178324810079395E /* MKMapView+ZoomLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZoomLevel.m"; sourceTree = "<group>"; };
+		F8F5F7BB178334810079395E /* JIPicTopoViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JIPicTopoViewCtrl.h; sourceTree = "<group>"; };
+		F8F5F7BC178334810079395E /* JIPicTopoViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JIPicTopoViewCtrl.m; sourceTree = "<group>"; };
+		F8F5F7BD178334820079395E /* JIPicTopoViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JIPicTopoViewCtrl.xib; sourceTree = "<group>"; };
+		F8F5F7C017836A270079395E /* JITopoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JITopoView.h; sourceTree = "<group>"; };
+		F8F5F7C117836A270079395E /* JITopoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JITopoView.m; sourceTree = "<group>"; };
+		F8F5F7C31784BEA70079395E /* AngelOfPoets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AngelOfPoets.png; path = ../Desktop/AngelOfPoets.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +182,11 @@
 				F8F5F784178324810079395E /* JIRouteSpecsCell.xib */,
 				F8F5F786178324810079395E /* MKMapView+ZoomLevel.h */,
 				F8F5F787178324810079395E /* MKMapView+ZoomLevel.m */,
+				F8F5F7BB178334810079395E /* JIPicTopoViewCtrl.h */,
+				F8F5F7BC178334810079395E /* JIPicTopoViewCtrl.m */,
+				F8F5F7BD178334820079395E /* JIPicTopoViewCtrl.xib */,
+				F8F5F7C017836A270079395E /* JITopoView.h */,
+				F8F5F7C117836A270079395E /* JITopoView.m */,
 				F8F5F7AA178324CF0079395E /* Supporting Files */,
 			);
 			path = Climbr;
@@ -181,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				F8F5F763178324810079395E /* Climbr-Info.plist */,
+				F8F5F7C31784BEA70079395E /* AngelOfPoets.png */,
 				F8F5F764178324810079395E /* Climbr-Prefix.pch */,
 				F8F5F765178324810079395E /* Default-568h@2x.png */,
 				F8F5F766178324810079395E /* Default.png */,
@@ -253,6 +269,8 @@
 				F8F5F7A0178324810079395E /* JIRoutes.xib in Resources */,
 				F8F5F7A2178324810079395E /* JIRouteSpecs.xib in Resources */,
 				F8F5F7A4178324810079395E /* JIRouteSpecsCell.xib in Resources */,
+				F8F5F7BF178334820079395E /* JIPicTopoViewCtrl.xib in Resources */,
+				F8F5F7C41784BEA80079395E /* AngelOfPoets.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +323,8 @@
 				F8F5F7A3178324810079395E /* JIRouteSpecsCell.m in Sources */,
 				F8F5F7A5178324810079395E /* main.m in Sources */,
 				F8F5F7A6178324810079395E /* MKMapView+ZoomLevel.m in Sources */,
+				F8F5F7BE178334820079395E /* JIPicTopoViewCtrl.m in Sources */,
+				F8F5F7C217836A270079395E /* JITopoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
