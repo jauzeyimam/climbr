@@ -7,10 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JITopoListView.h"
 
-@interface JIPicTopoViewCtrl : UIViewController
+@protocol TopoDelegate <NSObject>
+@required
+- (void) addTopo: (NSData*) topo withIndex:(int) index;
+@end
+
+@interface JIPicTopoViewCtrl : UIViewController <TopoNumberDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgLabel;
 @property (strong, nonatomic) UIImage *img;
+@property int index;
+@property (nonatomic, assign) id<TopoDelegate> delegate;
+@property (strong, nonatomic) NSArray *topos;
 
 @end

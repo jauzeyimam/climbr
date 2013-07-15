@@ -15,10 +15,18 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor=[UIColor clearColor];
-        myPath=[[UIBezierPath alloc]init];
-        myPath.lineCapStyle=kCGLineCapRound;
-        myPath.miterLimit=0;
-        myPath.lineWidth=10;
+        self.myPath=[[UIBezierPath alloc]init];
+        self.myPath.lineCapStyle=kCGLineCapRound;
+        self.myPath.miterLimit=0;
+        self.myPath.lineWidth=10;
+                
+        /*UIToolbar *toolbar = [[UIToolbar alloc] init];
+        toolbar.frame = CGRectMake(0, 462, self.frame.size.width, 44);
+        NSMutableArray *items = [[NSMutableArray alloc] init];
+        [items addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:nil]];
+        [items addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:nil]];
+        [toolbar setItems:items animated:NO];
+        [self addSubview:toolbar];*/
     }
     return self;
 }
@@ -28,9 +36,9 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-    
     [[UIColor blackColor] setStroke];
-    [myPath strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
+    [self.myPath strokeWithBlendMode:kCGBlendModeNormal alpha:1.0];
+    //[self setNeedsDisplay];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -38,14 +46,14 @@
     
     UITouch *mytouch=[[touches allObjects] objectAtIndex:0];
     
-    if (myPath.empty)
+    if (self.myPath.empty)
     {
-        [myPath moveToPoint:[mytouch locationInView:self]];
-        [myPath addLineToPoint:[mytouch locationInView:self]];
+        [self.myPath moveToPoint:[mytouch locationInView:self]];
+        [self.myPath addLineToPoint:[mytouch locationInView:self]];
         CGPoint pnt = [mytouch locationInView:self];
         NSLog(@"%@", NSStringFromCGPoint(pnt));
     }else
-        [myPath addLineToPoint:[mytouch locationInView:self]];
+        [self.myPath addLineToPoint:[mytouch locationInView:self]];
     [self setNeedsDisplay];
 }
 

@@ -10,7 +10,8 @@
 
 @interface JITopoView : UIView
 {
-    UIBezierPath *myPath;
 }
+
+@property (strong, nonatomic) UIBezierPath *myPath;
 
 @end

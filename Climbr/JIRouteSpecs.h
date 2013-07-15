@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Firebase/Firebase.h>
+#import "JIPicTopoViewCtrl.h"
 
 
-@interface JIRouteSpecs : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface JIRouteSpecs : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, TopoDelegate>
 {
     
 }
@@ -28,12 +29,12 @@
 @property (weak, nonatomic) NSString *locText;
 @property (weak, nonatomic) NSString *descText;
 
+
 @property (nonatomic, strong) Firebase *f;
 @property (strong, nonatomic) NSString *URL;
 @property (weak, nonatomic) NSString *parentURL;
 @property (strong, nonatomic) NSString *routeName;
-
-
+@property (strong, nonatomic) NSMutableArray *topos;
 
 - (IBAction)addPhoto:(id)sender;
 

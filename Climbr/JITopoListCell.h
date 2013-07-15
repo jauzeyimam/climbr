@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface JITopoListCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *number;
 
 @end

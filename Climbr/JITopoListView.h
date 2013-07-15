@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TopoNumberDelegate <NSObject>
+@required
+- (void) topoShow: (NSString*) number;
+@end
+
 @interface JITopoListView : UIViewController
 
 @end

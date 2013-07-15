@@ -46,7 +46,12 @@
     [self.location setUserInteractionEnabled:NO];
     [self.description setUserInteractionEnabled:NO];
 
+    self.topos = [[NSMutableArray alloc] init];
     
+    UIImage *img = [UIImage imageNamed:@"AngelOfPoets.png"];
+    
+    [imageArray addObject:img];
+
     
     
     //NSSortDescriptor *sortDescriptor;
@@ -79,7 +84,7 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section
 {
-    return 5;
+    return imageArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -88,9 +93,6 @@
     JIRouteSpecsCell *Cell =
     [collectionView dequeueReusableCellWithReuseIdentifier:@"PhotoCell"
                                               forIndexPath:indexPath];
-    UIImage *img = [UIImage imageNamed:@"AngelOfPoets.png"];
-    
-    [imageArray addObject:img];
     
     [Cell setItemDetail:[imageArray objectAtIndex:indexPath.row]];
     
@@ -103,8 +105,27 @@
     JIPicTopoViewCtrl *uiView = [[JIPicTopoViewCtrl alloc] initWithNibName:@"JIPicTopoViewCtrl" bundle:nil];
     
     uiView.img = [imageArray objectAtIndex:indexPath.row];
-    
+    uiView.index = indexPath.row;
+    uiView.delegate = self;
+    if (self.topos.count != 0)
+        uiView.path = [[self.topos objectAtIndex:0] valueForKey:@"0"];
     [self.navigationController pushViewController:uiView animated:YES];
+}
+
+-(void) addTopo: (NSData*) topo withIndex:(int) index;
+{
+    if ([self.topos count] == 0)
+    {
+        [self.topos insertObject:@{@"0": topo} atIndex:index];
+    }
+    else
+    {
+        NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithDictionary:[self.topos objectAtIndex:index]];
+        NSString *count = [NSString stringWithFormat:@"%d",[[self.topos objectAtIndex:index] count]];
+        [dict setObject:topo forKey:count];
+        [self.topos insertObject:dict atIndex:index];
+        NSLog(@"%@", dict);
+    }
 }
 
 
