@@ -20,6 +20,6 @@
 @property (strong, nonatomic) UIImage *img;
 @property int index;
 @property (nonatomic, assign) id<TopoDelegate> delegate;
-@property (strong, nonatomic) NSArray *topos;
+@property (strong, nonatomic) NSMutableArray *topos;
 
 @end

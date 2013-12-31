@@ -54,6 +54,7 @@
         NSLog(@"%@", NSStringFromCGPoint(pnt));
     }else
         [self.myPath addLineToPoint:[mytouch locationInView:self]];
+    NSLog(@"%@", self.myPath);
     [self setNeedsDisplay];
 }
 

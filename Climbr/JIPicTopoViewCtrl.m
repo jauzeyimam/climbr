@@ -33,7 +33,7 @@ JITopoView *uiView;
     [self.imgLabel setImage:self.img];
     
     UIBarButtonItem *topo = [[UIBarButtonItem alloc]
-                               initWithTitle:@"Topo" style:UIBarButtonItemStyleBordered target:self action:@selector(addTopo:)
+                               initWithTitle:@"Topo" style:UIBarButtonItemStyleBordered target:self action:@selector(showTopoView:)
                                ];
     
     toolbar = [[UIToolbar alloc] init];
@@ -53,7 +53,7 @@ JITopoView *uiView;
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)addTopo:(id)sender {
+- (IBAction)showTopoView:(id)sender {
     uiView = [[JITopoView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
     /*UIBezierPath *bezPath = [NSKeyedUnarchiver unarchiveObjectWithData:self.path];
     if (self.path != nil)
@@ -67,11 +67,6 @@ JITopoView *uiView;
 {
     NSData *bezierPath = [NSKeyedArchiver archivedDataWithRootObject:uiView.myPath];
     [self.delegate addTopo:bezierPath withIndex:self.index];
-}
-
-- (void) topoShow:(NSString *)number
-{
-    
 }
 
 @end

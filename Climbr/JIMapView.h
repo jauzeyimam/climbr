@@ -11,6 +11,7 @@
 #import <Firebase/Firebase.h>
 #import <MapKit/MKAnnotation.h>
 #import "JIAnnotation.h"
+#import <Firebase/Firebase.h>
 
 @interface JIMapView : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 {

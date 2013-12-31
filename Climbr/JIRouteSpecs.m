@@ -107,8 +107,7 @@
     uiView.img = [imageArray objectAtIndex:indexPath.row];
     uiView.index = indexPath.row;
     uiView.delegate = self;
-    if (self.topos.count != 0)
-        uiView.path = [[self.topos objectAtIndex:0] valueForKey:@"0"];
+    uiView.topos = self.topos;
     [self.navigationController pushViewController:uiView animated:YES];
 }
 
